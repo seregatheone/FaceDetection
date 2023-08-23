@@ -51,6 +51,22 @@ android {
 
 dependencies {
 
+    // CameraX
+    val cameraxVersion = "1.2.3"
+    implementation ("androidx.camera:camera-lifecycle:$cameraxVersion")
+    implementation ("androidx.camera:camera-view:$cameraxVersion")
+    implementation ("androidx.camera:camera-extensions:$cameraxVersion")
+
+// Accompanist
+    val accompanistPermissionsVersion = "0.27.0"
+    implementation ("com.google.accompanist:accompanist-permissions:$accompanistPermissionsVersion")
+
+    implementation ("com.google.android.gms:play-services-mlkit-face-detection:17.1.0")
+    implementation ("androidx.camera:camera-camera2:$cameraxVersion")
+    implementation ("androidx.camera:camera-core:$cameraxVersion")
+
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1")
+
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
     implementation("androidx.activity:activity-compose:1.7.0")
